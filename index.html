@@ -53,6 +53,14 @@
 
   <!-- Album grid -->
   <div class="grid-wrap">
+    <div class="filter-bar">
+      <div class="filter-group" role="group" aria-label="Filter discography by engineer">
+        <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter-btn" data-filter="john" aria-pressed="false">John</button>
+        <button type="button" class="filter-btn" data-filter="tess" aria-pressed="false">Tess</button>
+      </div>
+      <p class="filter-count" id="filter-count" aria-live="polite"></p>
+    </div>
     <div class="album-grid" id="album-grid"></div>
   </div>
 

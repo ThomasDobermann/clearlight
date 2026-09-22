@@ -630,3 +630,90 @@ h2.heading {
   color: var(--zinc-400);
   line-height: 1.75;
 }
+
+/* Links from About page into the engineer pages */
+.engineer-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--zinc-300);
+  border-bottom: 1px solid var(--zinc-700);
+  padding-bottom: 3px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.engineer-link:hover { color: #fff; border-bottom-color: var(--zinc-400); }
+.portrait a { display: block; }
+.portrait a img { transition: opacity 0.3s; }
+.portrait a:hover img { opacity: 0.85; }
+
+/* ─── Header: stack into two rows on narrow screens ───────────────────────── */
+@media (max-width: 719px) {
+  .header-inner {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  .site-nav { gap: 18px; flex-wrap: wrap; }
+  .brand-name { font-size: 18px; }
+}
+
+/* The tagline beside the studio name only fits alongside the nav
+   on wide screens. Below that it's hidden from the header (it still
+   appears on the landing page). */
+@media (min-width: 768px) and (max-width: 1239px) {
+  .brand-tag { display: none; }
+}
+
+/* ─── Discography filter ─────────────────────────────────────────────────── */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 20px 16px;
+}
+.filter-group { display: flex; gap: 6px; }
+.filter-btn {
+  font-family: var(--sans);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--zinc-500);
+  background: transparent;
+  border: 1px solid var(--zinc-800);
+  padding: 9px 18px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+.filter-btn:hover { color: #e4e4e7; border-color: var(--zinc-600); }
+.filter-btn.active { color: #000; background: #fff; border-color: #fff; }
+.filter-btn:focus-visible { outline: 1px solid var(--zinc-400); outline-offset: 2px; }
+.filter-count {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--zinc-600);
+}
+
+/* Fade the grid out while it reorders, then cards stagger back in */
+.album-grid { transition: opacity 0.22s ease; }
+.album-grid.is-shuffling { opacity: 0; }
+.album-card { animation: none; opacity: 1; }
+.album-card--in { opacity: 0; animation: fadeIn 0.5s ease forwards; }
+
+.album-engineer {
+  margin-top: 8px;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--zinc-500);
+}
+
+@media (min-width: 768px) {
+  .filter-bar { padding: 28px 40px 20px; }
+}
