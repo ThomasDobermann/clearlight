@@ -659,6 +659,7 @@ h2.heading {
     padding-bottom: 14px;
   }
   .site-nav { gap: 18px; flex-wrap: wrap; }
+  .filter-group { gap: 18px; }
   .brand-name { font-size: 18px; }
 }
 
@@ -669,15 +670,8 @@ h2.heading {
   .brand-tag { display: none; }
 }
 
-/* ─── Discography filter ─────────────────────────────────────────────────── */
-.filter-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 20px 20px 16px;
-}
-.filter-group { display: flex; gap: 6px; }
+/* ─── Discography filter (lives in the header nav) ───────────────────────── */
+.filter-group { display: flex; align-items: center; gap: 24px; }
 .filter-btn {
   font-family: var(--sans);
   font-size: 11px;
@@ -685,14 +679,21 @@ h2.heading {
   letter-spacing: 0.18em;
   color: var(--zinc-500);
   background: transparent;
-  border: 1px solid var(--zinc-800);
-  padding: 9px 18px;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  padding: 2px 0;
   cursor: pointer;
-  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  transition: color 0.2s, border-color 0.2s;
 }
-.filter-btn:hover { color: #e4e4e7; border-color: var(--zinc-600); }
-.filter-btn.active { color: #000; background: #fff; border-color: #fff; }
+.filter-btn:hover { color: #e4e4e7; }
+.filter-btn.active { color: #fff; border-bottom-color: #fff; }
 .filter-btn:focus-visible { outline: 1px solid var(--zinc-400); outline-offset: 2px; }
+.nav-divider { width: 1px; height: 14px; background: var(--zinc-800); }
+.filter-bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 20px 4px;
+}
 .filter-count {
   font-size: 10px;
   text-transform: uppercase;
@@ -715,5 +716,5 @@ h2.heading {
 }
 
 @media (min-width: 768px) {
-  .filter-bar { padding: 28px 40px 20px; }
+  .filter-bar { padding: 20px 40px 4px; }
 }

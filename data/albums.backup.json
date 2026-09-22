@@ -705,6 +705,14 @@
     ]
   },
   {
+    "artist": "Louane",
+    "album": "Solo",
+    "year": 2024,
+    "engineers": [
+      "john"
+    ]
+  },
+  {
     "artist": "Louise",
     "album": "Greatest Hits",
     "year": 2023,
@@ -987,6 +995,20 @@
     ]
   },
   {
+    "artist": "Kayla DiVenere",
+    "album": "Bubblegum Glue",
+    "engineers": [
+      "tess"
+    ]
+  },
+  {
+    "artist": "Matilda Marigolds",
+    "album": "BEEP BOOP",
+    "engineers": [
+      "tess"
+    ]
+  },
+  {
     "artist": "Bennett Coast",
     "album": "40 Hour Drive",
     "engineers": [
@@ -1101,6 +1123,14 @@
   {
     "artist": "Kayla DiVenere",
     "album": "Date Myself",
+    "year": 2023,
+    "engineers": [
+      "tess"
+    ]
+  },
+  {
+    "artist": "Kayla DiVenere",
+    "album": "Jumping The Gun",
     "year": 2023,
     "engineers": [
       "tess"

@@ -44,6 +44,12 @@
         </span>
       </a>
       <nav class="site-nav">
+        <div class="filter-group" role="group" aria-label="Filter discography by engineer">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-btn" data-filter="john" aria-pressed="false">John</button>
+          <button type="button" class="filter-btn" data-filter="tess" aria-pressed="false">Tess</button>
+        </div>
+        <span class="nav-divider" aria-hidden="true"></span>
         <a href="index.html">Work</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
@@ -54,11 +60,6 @@
   <!-- Album grid -->
   <div class="grid-wrap">
     <div class="filter-bar">
-      <div class="filter-group" role="group" aria-label="Filter discography by engineer">
-        <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
-        <button type="button" class="filter-btn" data-filter="john" aria-pressed="false">John</button>
-        <button type="button" class="filter-btn" data-filter="tess" aria-pressed="false">Tess</button>
-      </div>
       <p class="filter-count" id="filter-count" aria-live="polite"></p>
     </div>
     <div class="album-grid" id="album-grid"></div>
