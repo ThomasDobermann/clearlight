@@ -1,6 +1,6 @@
 {
-  "_comment": "ESTIMATE ONLY. Replace these with real figures from Spotify for Artists. See README.",
-  "totalStreams": 28500000000,
-  "streamsPerDay": 19000000,
-  "lastUpdated": "2026-09-10"
+  "_comment": "totalStreams is the client's own figure (~70B, Oct 2026). streamsPerDay is still an ESTIMATE and needs a real number — see README.",
+  "totalStreams": 70000000000,
+  "streamsPerDay": 46000000,
+  "lastUpdated": "2026-10-28"
 }
