@@ -95,6 +95,8 @@ function createCard(release) {
         <h3 class="album-title">${release.album}</h3>
         <p class="album-meta">
           ${release.artist}
+          <span style="opacity:0.4">&middot;</span>
+          ${release.year}
           <span class="album-listen">${spotifyIcon} Listen</span>
         </p>
         <p class="album-engineer">${engineerLabel(release)}</p>
@@ -171,7 +173,14 @@ async function initGrid() {
   const layout = (filter, doShuffle) => {
     const matching = entries.filter((e) =>
       filter === 'all' || (e.release.engineers || []).includes(filter));
-    const ordered = doShuffle ? shuffle(matching) : matching;
+
+    // Releases with a "pin" number always lead, in that order.
+    // Everything else shuffles behind them.
+    const pinned = matching
+      .filter((e) => e.release.pin)
+      .sort((a, b) => a.release.pin - b.release.pin);
+    const rest = matching.filter((e) => !e.release.pin);
+    const ordered = pinned.concat(doShuffle ? shuffle(rest) : rest);
 
     entries.forEach((e) => { e.card.style.display = 'none'; });
     ordered.forEach((e, i) => {
@@ -217,20 +226,33 @@ async function initGrid() {
     b.addEventListener('click', () => select(b.dataset.filter, true));
   });
 
-  // First load keeps the curated order, unless the URL asks for an engineer
+  // Every load: pinned releases lead, the rest shuffle
   const fromUrl = new URLSearchParams(window.location.search).get('engineer');
   const initial = ENGINEER_LABELS[fromUrl] ? fromUrl : 'all';
   current = initial;
-  layout(initial, initial !== 'all');
+  layout(initial, true);
+}
+
+// The splash plays once per visit. Returning to the home page from
+// elsewhere on the site skips it.
+function splashAlreadySeen() {
+  try { return sessionStorage.getItem('cl_splash') === '1'; }
+  catch (e) { return false; }
+}
+function markSplashSeen() {
+  try { sessionStorage.setItem('cl_splash', '1'); } catch (e) { /* private mode */ }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Skip the landing splash when arriving on a filtered link
   const engineer = new URLSearchParams(window.location.search).get('engineer');
-  if (engineer) {
+  const skip = engineer || splashAlreadySeen() ||
+               window.location.hash === '#work';
+  if (skip) {
     const landing = document.getElementById('landing');
     if (landing) landing.remove();
+    document.body.style.overflow = '';
   } else {
+    markSplashSeen();
     initLanding();
   }
   initCounter();

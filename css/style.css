@@ -63,7 +63,7 @@ img { display: block; max-width: 100%; }
 .brand-tag {
   display: none;
   font-size: 10px;
-  color: var(--zinc-600);
+  color: var(--zinc-400);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   white-space: nowrap;
@@ -74,7 +74,7 @@ img { display: block; max-width: 100%; }
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: var(--zinc-500);
+  color: var(--zinc-400);
   transition: color 0.2s;
 }
 .site-nav a:hover { color: #e4e4e7; }
@@ -95,7 +95,7 @@ img { display: block; max-width: 100%; }
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--zinc-600);
+  color: var(--zinc-400);
 }
 .footer-links { display: flex; gap: 20px; }
 .footer-links a { transition: color 0.2s; }
@@ -137,8 +137,8 @@ img { display: block; max-width: 100%; }
   font-weight: 400;
 }
 .landing-sub {
-  font-size: 11px;
-  color: var(--zinc-500);
+  font-size: 12px;
+  color: var(--zinc-400);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   line-height: 1.7;
@@ -155,25 +155,25 @@ img { display: block; max-width: 100%; }
   letter-spacing: -0.01em;
 }
 .counter-label {
-  font-size: 10px;
-  color: var(--zinc-600);
+  font-size: 11px;
+  color: var(--zinc-300);
   text-transform: uppercase;
   letter-spacing: 0.22em;
 }
 .counter-note {
-  font-size: 9px;
-  color: var(--zinc-700);
+  font-size: 10px;
+  color: var(--zinc-400);
   text-transform: uppercase;
   letter-spacing: 0.15em;
   margin-top: 2px;
 }
 
 .landing-enter {
-  font-size: 10px;
-  color: var(--zinc-700);
+  font-size: 13px;
+  color: var(--zinc-300);
   text-transform: uppercase;
   letter-spacing: 0.3em;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 /* ─── Album grid ────────────────────────────────────────────────────────── */
@@ -215,7 +215,7 @@ img { display: block; max-width: 100%; }
   background: var(--zinc-900);
   font-family: var(--serif);
   font-size: 60px;
-  color: var(--zinc-700);
+  color: var(--zinc-500);
   text-transform: uppercase;
 }
 
@@ -304,7 +304,7 @@ img { display: block; max-width: 100%; }
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.25em;
-  color: var(--zinc-600);
+  color: var(--zinc-400);
   margin-bottom: 12px;
 }
 
@@ -358,7 +358,7 @@ h2.heading {
 .portrait { max-width: 320px; margin: 0 auto; }
 .portrait img { width: 100%; filter: grayscale(100%) contrast(1.05); }
 .portrait-name { font-family: var(--serif); font-size: 13px; color: var(--zinc-300); margin-top: 16px; }
-.portrait-role { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--zinc-600); margin-top: 2px; }
+.portrait-role { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--zinc-400); margin-top: 2px; }
 
 /* Testimonials */
 .testimonial-grid { display: grid; gap: 40px; }
@@ -375,14 +375,14 @@ h2.heading {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--zinc-600);
+  color: var(--zinc-400);
   font-style: normal;
 }
 
 /* Stats */
 .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 320px; margin-top: 40px; }
 .stat-num { font-family: var(--serif); font-size: 30px; color: #fff; }
-.stat-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--zinc-600); margin-top: 4px; }
+.stat-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--zinc-400); margin-top: 4px; }
 
 /* Grammy carousel */
 .grammy { display: flex; flex-direction: column; align-items: center; gap: 40px; }
@@ -393,7 +393,7 @@ h2.heading {
   width: 100%; height: 100%;
   background: var(--zinc-900);
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--serif); font-size: 48px; color: var(--zinc-700);
+  font-family: var(--serif); font-size: 48px; color: var(--zinc-500);
 }
 .grammy-badge {
   position: absolute; top: -12px; right: -12px;
@@ -407,7 +407,7 @@ h2.heading {
 .grammy-award { font-size: 9px; text-transform: uppercase; letter-spacing: 0.25em; color: rgba(251,191,36,0.8); margin-bottom: 12px; }
 .grammy-title { font-family: var(--serif); font-size: 20px; color: #fff; line-height: 1.2; margin-bottom: 4px; font-weight: 400; }
 .grammy-artist { font-size: 12px; color: var(--zinc-500); }
-.grammy-ceremony { font-size: 10px; color: var(--zinc-700); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 4px; }
+.grammy-ceremony { font-size: 10px; color: var(--zinc-400); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 4px; }
 .grammy-dots { display: flex; gap: 8px; }
 .grammy-dots button {
   width: 6px; height: 6px;
@@ -444,7 +444,7 @@ h2.heading {
   outline: none;
 }
 .field input:focus, .field textarea:focus { border-bottom-color: var(--zinc-400); }
-.field input::placeholder, .field textarea::placeholder { color: var(--zinc-700); }
+.field input::placeholder, .field textarea::placeholder { color: var(--zinc-600); }
 .field textarea { resize: none; }
 
 .btn {
@@ -464,12 +464,12 @@ h2.heading {
 .btn:hover { border-color: var(--zinc-400); background: var(--zinc-900); }
 .btn:disabled { opacity: 0.5; cursor: default; }
 
-.form-status { font-size: 13px; }
+.form-status { font-size: 13px; color: var(--zinc-300); line-height: 1.6; }
 .form-status.error { color: #f87171; }
 
 .contact-success { text-align: center; padding: 48px 0; }
 .contact-success p:first-child { color: var(--zinc-400); font-size: 14px; margin-bottom: 8px; }
-.contact-success p:last-child { color: var(--zinc-600); font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; }
+.contact-success p:last-child { color: var(--zinc-400); font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; }
 
 .cta-section { padding: 96px 24px; text-align: center; max-width: 640px; margin: 0 auto; }
 .cta-link {
@@ -582,13 +582,13 @@ h2.heading {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: var(--zinc-600);
+  color: var(--zinc-400);
   line-height: 2;
 }
 .family-photo.missing .family-photo-note span {
   font-size: 10px;
   letter-spacing: 0.05em;
-  color: var(--zinc-700);
+  color: var(--zinc-500);
   text-transform: none;
 }
 
@@ -604,7 +604,7 @@ h2.heading {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: var(--zinc-600);
+  color: var(--zinc-400);
   font-style: normal;
 }
 
@@ -659,7 +659,6 @@ h2.heading {
     padding-bottom: 14px;
   }
   .site-nav { gap: 18px; flex-wrap: wrap; }
-  .filter-group { gap: 18px; }
   .brand-name { font-size: 18px; }
 }
 
@@ -670,35 +669,35 @@ h2.heading {
   .brand-tag { display: none; }
 }
 
-/* ─── Discography filter (lives in the header nav) ───────────────────────── */
-.filter-group { display: flex; align-items: center; gap: 24px; }
+/* ─── Discography filter ─────────────────────────────────────────────────── */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 20px 16px;
+}
+.filter-group { display: flex; gap: 6px; }
 .filter-btn {
   font-family: var(--sans);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: var(--zinc-500);
+  color: var(--zinc-400);
   background: transparent;
-  border: 0;
-  border-bottom: 1px solid transparent;
-  padding: 2px 0;
+  border: 1px solid var(--zinc-800);
+  padding: 9px 18px;
   cursor: pointer;
-  transition: color 0.2s, border-color 0.2s;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
 }
-.filter-btn:hover { color: #e4e4e7; }
-.filter-btn.active { color: #fff; border-bottom-color: #fff; }
+.filter-btn:hover { color: #e4e4e7; border-color: var(--zinc-400); }
+.filter-btn.active { color: #000; background: #fff; border-color: #fff; }
 .filter-btn:focus-visible { outline: 1px solid var(--zinc-400); outline-offset: 2px; }
-.nav-divider { width: 1px; height: 14px; background: var(--zinc-800); }
-.filter-bar {
-  display: flex;
-  justify-content: flex-end;
-  padding: 16px 20px 4px;
-}
 .filter-count {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: var(--zinc-600);
+  color: var(--zinc-400);
 }
 
 /* Fade the grid out while it reorders, then cards stagger back in */
@@ -716,5 +715,47 @@ h2.heading {
 }
 
 @media (min-width: 768px) {
-  .filter-bar { padding: 20px 40px 4px; }
+  .filter-bar { padding: 28px 40px 20px; }
+}
+
+/* ─── Work / client list ─────────────────────────────────────────────────── */
+.clients-main { flex: 1; }
+.clients-intro { max-width: 1100px; margin: 0 auto; padding: 72px 24px 0; }
+.clients-title { margin-bottom: 16px; }
+.clients-lede { max-width: 460px; color: var(--zinc-400); }
+.clients-lede a { color: var(--zinc-300); border-bottom: 1px solid var(--zinc-700); }
+.clients-lede a:hover { color: #fff; border-bottom-color: var(--zinc-400); }
+.clients-filter { padding: 36px 0 0; }
+
+.clients-section { max-width: 1100px; margin: 0 auto; padding: 40px 24px 96px; }
+.clients-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 32px;
+  row-gap: 14px;
+}
+.client-name {
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.3;
+  color: #fff;
+}
+.client-empty {
+  grid-column: 1 / -1;
+  color: var(--zinc-400);
+  font-size: 13px;
+}
+
+@media (min-width: 560px) {
+  .clients-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 900px) {
+  .clients-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .client-name { font-size: 19px; }
+  .clients-intro { padding: 96px 40px 0; }
+  .clients-section { padding-left: 40px; padding-right: 40px; }
+}
+@media (min-width: 1280px) {
+  .clients-list { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 }

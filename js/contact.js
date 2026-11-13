@@ -1,7 +1,12 @@
 /* ─── Contact form ───────────────────────────────────────────────────────── */
 
-// ⚠️ REPLACE THIS with your form ID from formspree.io
-// Sign up free, create a form, and paste the ID here (looks like "xdorwqkv")
+// ── Form delivery ────────────────────────────────────────────────────────
+// Until this is set, the form accepts input but tells the visitor it isn't
+// live yet (fine for a review link, not for launch).
+//
+// To make it live: sign up free at formspree.io, create a form pointed at
+// the studio's enquiries address, and paste the form ID here — a short
+// string like "xdorwqkv". Nothing else needs changing.
 const FORMSPREE_ID = 'YOUR_FORM_ID';
 
 function initContactForm() {
@@ -17,8 +22,8 @@ function initContactForm() {
 
     if (FORMSPREE_ID === 'YOUR_FORM_ID') {
       status.style.display = 'block';
-      status.className = 'form-status error';
-      status.textContent = 'Form not configured yet — add your Formspree ID in js/contact.js';
+      status.className = 'form-status';
+      status.textContent = 'This form isn’t connected yet — it will be before the site goes live.';
       return;
     }
 
@@ -26,10 +31,14 @@ function initContactForm() {
     btn.textContent = 'Sending…';
     status.style.display = 'none';
 
+    // Read the fields via FormData. Don't use form.name / form.email —
+    // a <form> already has its own .name property, so form.name returns
+    // the form's name attribute rather than the name input.
+    const fd = new FormData(form);
     const data = {
-      name: form.name.value,
-      email: form.email.value,
-      message: form.message.value,
+      name: (fd.get('name') || '').toString().trim(),
+      email: (fd.get('email') || '').toString().trim(),
+      message: (fd.get('message') || '').toString().trim(),
     };
 
     try {
