@@ -10,7 +10,7 @@
     "pin": 1,
     "award": "Grammy — Album of the Year",
     "spotifyUrl": "https://open.spotify.com/album/0S0KGZnfBGSIssfF54WSJh",
-    "itunesSearch": "Billie Eilish bad guy",
+    "itunesId": 1450695723,
     "tessAssistUnconfirmed": true
   },
   {
@@ -22,7 +22,7 @@
     ],
     "pin": 2,
     "spotifyUrl": "https://open.spotify.com/album/7fRrTyKvE4Skh93v97gtcU",
-    "itunesSearch": "Billie Eilish ocean eyes"
+    "itunesId": 1440898929
   },
   {
     "artist": "Billie Eilish",
@@ -33,7 +33,6 @@
       "tess"
     ],
     "pin": 3,
-    "itunesSearch": "Billie Eilish my future",
     "itunesId": 1564530719,
     "tessAssistUnconfirmed": true
   },
@@ -46,7 +45,7 @@
       "tess"
     ],
     "pin": 4,
-    "itunesSearch": "Billie Eilish no time to die",
+    "itunesId": 1498647640,
     "tessAssistUnconfirmed": true
   },
   {
@@ -60,7 +59,7 @@
     "pin": 5,
     "award": "Grammy — Record of the Year",
     "spotifyUrl": "https://open.spotify.com/track/3ZCTVFBt2Brf31RLEnCkWJ",
-    "itunesSearch": "Billie Eilish everything i wanted",
+    "itunesId": 1487502456,
     "tessAssistUnconfirmed": true
   },
   {
@@ -72,7 +71,7 @@
       "tess"
     ],
     "pin": 6,
-    "itunesSearch": "Tinashe 333",
+    "itunesId": 1834854332,
     "tessAssistUnconfirmed": true
   },
   {
@@ -84,7 +83,7 @@
       "tess"
     ],
     "pin": 7,
-    "itunesSearch": "Joe Jonas music for people who believe in love",
+    "itunesId": 1816024877,
     "tessAssistUnconfirmed": true
   },
   {
@@ -95,7 +94,7 @@
       "john"
     ],
     "pin": 8,
-    "itunesSearch": "Kacy Hill Bug"
+    "itunesId": 1739861038
   },
   {
     "artist": "Bo Burnham",
@@ -106,7 +105,7 @@
     ],
     "pin": 9,
     "spotifyUrl": "https://open.spotify.com/track/25AvaE23MXl06YRtQcQoJS",
-    "itunesSearch": "Bo Burnham Inside The Songs"
+    "itunesId": 1571419211
   },
   {
     "artist": "Trousdale",
@@ -116,7 +115,7 @@
       "tess"
     ],
     "pin": 10,
-    "itunesSearch": "Trousdale Growing Pains"
+    "itunesId": 1785985202
   },
   {
     "artist": "Gracie Abrams",
@@ -127,7 +126,7 @@
       "tess"
     ],
     "pin": 11,
-    "itunesSearch": "Gracie Abrams 21",
+    "itunesId": 1521724990,
     "tessAssistUnconfirmed": true
   },
   {
@@ -139,7 +138,7 @@
       "tess"
     ],
     "pin": 12,
-    "itunesSearch": "girl in red doing it again baby"
+    "itunesId": 1729230250
   },
   {
     "artist": "Lady Gaga",
@@ -149,7 +148,7 @@
       "john"
     ],
     "pin": 13,
-    "itunesSearch": "Lady Gaga Dawn of Chromatica"
+    "itunesId": 1583876941
   },
   {
     "artist": "The Marías",
@@ -159,7 +158,7 @@
       "john"
     ],
     "pin": 14,
-    "itunesSearch": "The Marias Hold It Together"
+    "itunesId": 1498701091
   },
   {
     "artist": "K. Flay",
@@ -170,7 +169,7 @@
     ],
     "pin": 15,
     "spotifyUrl": "https://open.spotify.com/track/7klyOzKwXkso1LDpjzgj7P",
-    "itunesSearch": "K. Flay not in california"
+    "itunesId": 1606694205
   },
   {
     "artist": "The Marías",
@@ -180,7 +179,7 @@
       "john"
     ],
     "pin": 16,
-    "itunesSearch": "The Marias Jupiter"
+    "itunesId": 1501159062
   },
   {
     "artist": "Liam Gallagher & John Squire",
@@ -191,7 +190,6 @@
       "tess"
     ],
     "pin": 17,
-    "itunesSearch": "Liam Gallagher John Squire Just Another Rainbow",
     "itunesId": 1726560518,
     "tessAssistUnconfirmed": true
   },
@@ -203,7 +201,7 @@
       "john"
     ],
     "pin": 18,
-    "itunesSearch": "Billy Idol Cage"
+    "itunesId": 1639307795
   },
   {
     "artist": "Cautious Clay",
@@ -214,7 +212,7 @@
     ],
     "pin": 19,
     "spotifyUrl": "https://open.spotify.com/track/1ugvFLfVoBSIyLam35yATm",
-    "itunesSearch": "Cautious Clay karma friends"
+    "itunesId": 1835467298
   },
   {
     "artist": "Bad Suns",
@@ -224,7 +222,7 @@
       "john"
     ],
     "pin": 20,
-    "itunesSearch": "Bad Suns Cardiac Arrest"
+    "itunesId": 1715014170
   },
   {
     "artist": "LP",
@@ -235,7 +233,7 @@
     ],
     "pin": 21,
     "spotifyUrl": "https://open.spotify.com/track/2LIh4uzqq9cXMPzzmcToHl",
-    "itunesSearch": "LP Lost On You"
+    "itunesId": 1675487257
   },
   {
     "artist": "Ashe",
@@ -245,7 +243,6 @@
       "john"
     ],
     "spotifyUrl": "https://open.spotify.com/track/7lZktsIHTGSq05jGUNGndd",
-    "itunesSearch": "Ashe til forever falls apart",
     "itunesId": 1561072490
   },
   {
@@ -256,7 +253,6 @@
       "john"
     ],
     "spotifyUrl": "https://open.spotify.com/track/5v6qYImm5k36GHlFxdEZyv",
-    "itunesSearch": "Ashe moral of the story",
     "itunesId": 1520827563
   },
   {
@@ -268,7 +264,7 @@
       "tess"
     ],
     "spotifyUrl": "https://open.spotify.com/track/4RVwu0g32PAqgUiJoXsdF8",
-    "itunesSearch": "Billie Eilish happier than ever",
+    "itunesId": 1564530526,
     "tessAssistUnconfirmed": true
   },
   {
@@ -278,7 +274,7 @@
     "engineers": [
       "tess"
     ],
-    "itunesSearch": "Cautious Clay Karpeh"
+    "itunesId": 1692484931
   },
   {
     "artist": "Claire Rosinkranz",
@@ -288,7 +284,7 @@
       "john"
     ],
     "spotifyUrl": "https://open.spotify.com/track/1xSmjB0t19q4CSJ0X0ymGB",
-    "itunesSearch": "Claire Rosinkranz frankenstein"
+    "itunesId": 1565617408
   },
   {
     "artist": "Claire Rosinkranz",
@@ -297,7 +293,7 @@
     "engineers": [
       "tess"
     ],
-    "itunesSearch": "Claire Rosinkranz Just Because"
+    "itunesId": 1675450303
   },
   {
     "artist": "Del Water Gap",
@@ -307,7 +303,7 @@
       "john"
     ],
     "spotifyUrl": "https://open.spotify.com/track/51Lf3l6wx008NdBxCQnD6B",
-    "itunesSearch": "Del Water Gap ode to a conversation"
+    "itunesId": 1892107754
   },
   {
     "artist": "Girl In Red",
@@ -318,7 +314,7 @@
       "tess"
     ],
     "spotifyUrl": "https://open.spotify.com/track/7tLTxOJY6cjQz4aJYMs8Nu",
-    "itunesSearch": "Girl In Red serotonin",
+    "itunesId": 1563263518,
     "tessAssistUnconfirmed": true
   },
   {
@@ -330,7 +326,7 @@
       "tess"
     ],
     "spotifyUrl": "https://open.spotify.com/album/7l2g05NyprwonSFIs2y8at",
-    "itunesSearch": "Gracie Abrams stay",
+    "itunesId": 1598000280,
     "tessAssistUnconfirmed": true
   },
   {
@@ -340,7 +336,7 @@
     "engineers": [
       "tess"
     ],
-    "itunesSearch": "Gustaf Package, Pt. 2"
+    "itunesId": 6775489064
   },
   {
     "artist": "Ice Cube",
@@ -350,7 +346,6 @@
       "john"
     ],
     "spotifyUrl": "https://open.spotify.com/album/6ERXqZ9zKziLn01Envydpj",
-    "itunesSearch": "Ice Cube death certificate",
     "itunesId": 1591675111
   },
   {
@@ -360,7 +355,7 @@
     "engineers": [
       "tess"
     ],
-    "itunesSearch": "Jem and the Holograms Fun to Be Scared"
+    "itunesId": 1838474169
   },
   {
     "artist": "Lady Gaga",
@@ -370,7 +365,7 @@
       "john"
     ],
     "spotifyUrl": "https://open.spotify.com/track/6QU0TVd1O7aJTucgFTo6tF",
-    "itunesSearch": "Lady Gaga rain on me"
+    "itunesId": 1500951604
   },
   {
     "artist": "Los Tigres del Norte",
@@ -381,7 +376,7 @@
     ],
     "award": "Grammy — Best Norteño Album",
     "spotifyUrl": "https://open.spotify.com/album/0lHpGds7Q8uJEc7nFiwrVM",
-    "itunesSearch": "Los Tigres del Norte Detalles Y Emociones"
+    "itunesId": 1443548332
   },
   {
     "artist": "Miguel",
@@ -391,7 +386,7 @@
       "john"
     ],
     "spotifyUrl": "https://open.spotify.com/track/5WoaF1B5XIEnWfmb5NZikf",
-    "itunesSearch": "Miguel sky walker"
+    "itunesId": 1305418479
   },
   {
     "artist": "Milky Chance",
@@ -401,7 +396,7 @@
       "john"
     ],
     "spotifyUrl": "https://open.spotify.com/track/34VD6GZycwcLUMXwpIur9M",
-    "itunesSearch": "Milky Chance don't let me down Jack Johnson"
+    "itunesId": 1710155074
   },
   {
     "artist": "Mura Masa",
@@ -411,7 +406,7 @@
       "john"
     ],
     "spotifyUrl": "https://open.spotify.com/track/4bLUlN1VbZvCksmFpjABwf",
-    "itunesSearch": "Mura Masa demon time"
+    "itunesId": 1640075422
   },
   {
     "artist": "Nessa Barrett",
@@ -422,7 +417,7 @@
       "tess"
     ],
     "spotifyUrl": "https://open.spotify.com/track/41UfGyA79IJHJXHkVyu24h",
-    "itunesSearch": "Nessa Barrett la di die",
+    "itunesId": 1582037825,
     "tessAssistUnconfirmed": true
   },
   {
@@ -432,7 +427,7 @@
     "engineers": [
       "tess"
     ],
-    "itunesSearch": "Pom Pom Squad Mirror Starts Moving Without Me"
+    "itunesId": 1755766269
   },
   {
     "artist": "Sam Smith",
@@ -442,7 +437,7 @@
       "john"
     ],
     "spotifyUrl": "https://open.spotify.com/track/00a15lAupHcNC7HWhG3AVG",
-    "itunesSearch": "Sam Smith diamonds"
+    "itunesId": 1531509367
   },
   {
     "artist": "Sigrid",
@@ -452,7 +447,7 @@
       "john"
     ],
     "spotifyUrl": "https://open.spotify.com/track/7FeWgVGGphXuSUu5wNeAcJ",
-    "itunesSearch": "Sigrid sucker punch"
+    "itunesId": 1437172566
   },
   {
     "artist": "Take That",
@@ -461,7 +456,7 @@
     "engineers": [
       "tess"
     ],
-    "itunesSearch": "Take That This Life"
+    "itunesId": 1706385319
   },
   {
     "artist": "The Marías",
@@ -471,6 +466,6 @@
       "john"
     ],
     "spotifyUrl": "https://open.spotify.com/album/5TkaDC4mYSLBvdG6UrIB0v",
-    "itunesSearch": "The Marias Cinema"
+    "itunesId": 1563957170
   }
 ]
