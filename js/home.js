@@ -119,7 +119,7 @@ function createCard(release) {
 
   // Load artwork once; the card keeps it through every filter and shuffle
   const searchTerm = release.itunesSearch || `${release.artist} ${release.album}`;
-  fetchArtwork(searchTerm).then((url) => {
+  fetchArtwork(searchTerm, release.artist, release.itunesId).then((url) => {
     const spinner = card.querySelector('.album-spinner');
     if (url) {
       const img = document.createElement('img');

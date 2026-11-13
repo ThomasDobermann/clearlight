@@ -87,7 +87,7 @@ function initGrammy() {
 
   // Fetch all the artwork
   GRAMMY_WINS.forEach(async (win, i) => {
-    const url = await fetchArtwork(win.search);
+    const url = await fetchArtwork(win.search, win.artist);
     grammyArtworks[i] = url;
     if (i === grammyActive) renderGrammy();
   });
