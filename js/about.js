@@ -1,13 +1,34 @@
 /* ─── Grammy carousel ────────────────────────────────────────────────────── */
 
+/* Each entry carries an exact Apple album id. Earlier these used track-name
+   searches ("Billie Eilish bad guy"), which matched the wrong single once the
+   artwork lookup started searching albums first. Ids never drift.
+   The three 62nd-Grammy wins all came from one album, so two of them share
+   a slide — and "bad guy" shows its parent album, which is where the
+   artwork lives. */
 const GRAMMY_WINS = [
-  { title: "When We All Fall Asleep, Where Do We Go?", artist: "Billie Eilish", award: "Album of the Year", ceremony: "62nd Grammy Awards · 2020", search: "Billie Eilish bad guy" },
-  { title: "bad guy", artist: "Billie Eilish", award: "Record of the Year", ceremony: "62nd Grammy Awards · 2020", search: "Billie Eilish bad guy" },
-  { title: "When We All Fall Asleep, Where Do We Go?", artist: "Billie Eilish", award: "Best Engineered Album, Non-Classical", ceremony: "62nd Grammy Awards · 2020", search: "Billie Eilish bad guy" },
-  { title: "Everything I Wanted", artist: "Billie Eilish", award: "Record of the Year", ceremony: "63rd Grammy Awards · 2021", search: "Billie Eilish everything i wanted" },
-  { title: "Historias Que Contar", artist: "Los Tigres del Norte", award: "Best Norteño Album", ceremony: "48th Grammy Awards · 2006", search: "Los Tigres del Norte Historias Que Contar" },
-  { title: "Detalles Y Emociones", artist: "Los Tigres del Norte", award: "Best Norteño Album", ceremony: "49th Grammy Awards · 2007", search: "Los Tigres del Norte Detalles Emociones" },
-  { title: "Tu Noche Con...Los Tigres del Norte", artist: "Los Tigres del Norte", award: "Best Norteño Album", ceremony: "50th Grammy Awards · 2008", search: "Los Tigres del Norte Tu Noche Con" },
+  { title: "When We All Fall Asleep, Where Do We Go?", artist: "Billie Eilish",
+    award: "Album of the Year · Best Engineered Album, Non-Classical",
+    ceremony: "62nd Grammy Awards · 2020", itunesId: 1450695723 },
+  { title: "bad guy", artist: "Billie Eilish",
+    award: "Record of the Year",
+    ceremony: "62nd Grammy Awards · 2020", itunesId: 1450695723 },
+  { title: "Everything I Wanted", artist: "Billie Eilish",
+    award: "Record of the Year",
+    ceremony: "63rd Grammy Awards · 2021", itunesId: 1487502456 },
+
+  /* John's own awards page lists the Los Tigres del Norte recognitions as
+     Grammy Certificates rather than personal wins — Best Norteño Album goes
+     to the artist. The prefix below keeps the page honest about that. */
+  { title: "Historias Que Contar", artist: "Los Tigres del Norte",
+    award: "Best Norteño Album", prefix: "Grammy Certificate",
+    ceremony: "48th Grammy Awards · 2006", itunesId: 1443569164 },
+  { title: "Detalles Y Emociones", artist: "Los Tigres del Norte",
+    award: "Best Norteño Album", prefix: "Grammy Certificate",
+    ceremony: "49th Grammy Awards · 2007", itunesId: 1443548332 },
+  { title: "Tu Noche Con...Los Tigres del Norte", artist: "Los Tigres del Norte",
+    award: "Best Norteño Album", prefix: "Grammy Certificate",
+    ceremony: "50th Grammy Awards · 2008", itunesId: 1443651451 },
 ];
 
 let grammyActive = 0;
@@ -41,7 +62,8 @@ function renderGrammy() {
     }
   }
 
-  document.getElementById('grammy-award').textContent = `Grammy Award — ${win.award}`;
+  document.getElementById('grammy-award').textContent =
+    `${win.prefix || 'Grammy Award'} — ${win.award}`;
   document.getElementById('grammy-title').textContent = win.title;
   document.getElementById('grammy-artist').textContent = win.artist;
   document.getElementById('grammy-ceremony').textContent = win.ceremony;
@@ -87,7 +109,7 @@ function initGrammy() {
 
   // Fetch all the artwork
   GRAMMY_WINS.forEach(async (win, i) => {
-    const url = await fetchArtwork(win.search, win.artist);
+    const url = await fetchArtwork(win.title, win.artist, win.itunesId);
     grammyArtworks[i] = url;
     if (i === grammyActive) renderGrammy();
   });
