@@ -33,7 +33,7 @@
       "tess"
     ],
     "pin": 3,
-    "itunesId": 1564530719,
+    "artwork": "assets/covers/billie-eilish-my-future.png",
     "tessAssistUnconfirmed": true
   },
   {
@@ -254,18 +254,6 @@
     ],
     "spotifyUrl": "https://open.spotify.com/track/5v6qYImm5k36GHlFxdEZyv",
     "itunesId": 1520827563
-  },
-  {
-    "artist": "Billie Eilish",
-    "album": "Happier Than Ever",
-    "year": 2021,
-    "engineers": [
-      "john",
-      "tess"
-    ],
-    "spotifyUrl": "https://open.spotify.com/track/4RVwu0g32PAqgUiJoXsdF8",
-    "itunesId": 1564530526,
-    "tessAssistUnconfirmed": true
   },
   {
     "artist": "Cautious Clay",

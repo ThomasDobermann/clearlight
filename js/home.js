@@ -117,9 +117,16 @@ function createCard(release) {
     card.classList.remove('active');
   });
 
-  // Load artwork once; the card keeps it through every filter and shuffle
+  // Load artwork once; the card keeps it through every filter and shuffle.
+  // A local "artwork" path always wins — use it when Apple has the wrong
+  // cover, or no longer carries the release (singles get pulled once the
+  // album lands). Drop the file in assets/covers/ and reference it here.
   const searchTerm = release.itunesSearch || `${release.artist} ${release.album}`;
-  fetchArtwork(searchTerm, release.artist, release.itunesId).then((url) => {
+  const artwork = release.artwork
+    ? Promise.resolve(release.artwork)
+    : fetchArtwork(searchTerm, release.artist, release.itunesId);
+
+  artwork.then((url) => {
     const spinner = card.querySelector('.album-spinner');
     if (url) {
       const img = document.createElement('img');
